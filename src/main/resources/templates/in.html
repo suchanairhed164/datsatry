@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head> 
+    <title>Сортировка массива</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Ввод массива</h1>
+    <form action="#" th:action="@{/in}" th:object="${in}" method="post">
+
+        <p>Массив: <input type="text" th:field="*{content}" /></p>
+        <p><input type="submit" value="Сортировать" /> <input type="reset" value="Очистить" /></p>
+    </form>
+</body>
+</html>
